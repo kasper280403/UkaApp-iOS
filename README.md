@@ -42,16 +42,37 @@ Products -> Test or CMD + U
 ## 🧱 Project Structure
 
 ```
-UkaApp/
-├── ukaApp/
-│   ├── main/
-│   │   ├── main.py
-│   │   ├── resource_getter.py
-│   │   └── user_input.py
-│   └── resources/tests/
+.
 ├── README.md
-├── requirements.txt
-└── .gitignore
+├── ukaAppen
+│   ├── Assets.xcassets
+│   │   ├── AccentColor.colorset
+│   │   │   └── Contents.json
+│   │   ├── AppIcon.appiconset
+│   │   │   └── Contents.json
+│   │   └── Contents.json
+│   ├── ContentView.swift
+│   ├── Item.swift
+│   └── ukaAppenApp.swift
+├── ukaAppen.xcodeproj
+│   ├── project.pbxproj
+│   ├── project.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   ├── xcshareddata
+│   │   │   └── swiftpm
+│   │   │       └── configuration
+│   │   └── xcuserdata
+│   │       └── kasperkarlsen.xcuserdatad
+│   │           └── UserInterfaceState.xcuserstate
+│   └── xcuserdata
+│       └── kasperkarlsen.xcuserdatad
+│           └── xcschemes
+│               └── xcschememanagement.plist
+├── ukaAppenTests
+│   └── ukaAppenTests.swift
+└── ukaAppenUITests
+    ├── ukaAppenUITests.swift
+    └── ukaAppenUITestsLaunchTests.swift
 ```
 
 ---
