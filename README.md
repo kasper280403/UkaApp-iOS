@@ -28,7 +28,7 @@ cd /path/to/folder/UkaApp
 
 ## 📋 Ruleset 
 
-See [DeveloperReadme](url.no)
+See [DeveloperReadme](https://github.com/kasper280403/UkaApp-iOS/blob/main/DeveloperReadme.md)
 
 # 🧪 Run Tests
 
