@@ -11,7 +11,7 @@
 5. **Always write clear and consistent commit messages.**
 
 ### Commit Message Guidelines
-- Use **imperative mood**: “Add feature”, not “Added feature” or “Adding feature”.  
+- Use **imperative mood**: “Add feature” or “Added feature” not “Adding feature”.  
 - Keep the summary **under 50 characters**.  
 - Start with a **capital letter**, and **omit the period** at the end.  
 - Follow the format:  
