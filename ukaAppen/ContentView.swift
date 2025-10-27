@@ -8,7 +8,7 @@ import SwiftUI
 import Combine
 
 struct ContentView: View {
-    // Sett datoen for uka som telles ned til
+    //Choose date for countdown
     let targetDate = Calendar.current.date(from: DateComponents(year: 2026, month: 10, day: 10, hour: 0, minute: 0, second: 0))!
     
     @State private var timeRemaining = ""
@@ -16,18 +16,15 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            // Bakgrunnsfarge (fra din Colors.swift-utvidelse)
             Color(hex: "#FF8D00")
                 .ignoresSafeArea()
             
             VStack(spacing: 40) {
-                // Overskrift
                 Text("Tid igjen til UKA!")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                 
-                // Nedtelling
                 Text(timeRemaining)
                     .font(.title)
                     .monospacedDigit()
@@ -36,9 +33,7 @@ struct ContentView: View {
                         updateCountdown()
                     }
                 
-                // Knapp
                 Button(action: {
-                    // Ingen handling foreløpig
                 }) {
                     Text("Trykk her")
                         .font(.title3)
@@ -57,7 +52,6 @@ struct ContentView: View {
         }
     }
     
-    // Beregner og oppdaterer nedtellingen
     func updateCountdown() {
         let now = Date()
         let diff = targetDate.timeIntervalSince(now)
