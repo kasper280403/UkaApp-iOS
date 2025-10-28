@@ -87,14 +87,14 @@ Products -> Test or CMD + U
 ---
 ## 👤 Admin(s)
 
-**Kasper S. Karlsen**  
-[GitHub Profile](https://github.com/kasper280403)
+**Kasper S. Karlsen** [GitHub Profile](https://github.com/kasper280403)
 
 ---
 
 ### 👥 Collaborator(s)
 
 **Marte Tangen** [GitHub Profile](https://github.com/kasper280403)
+**Luna Gudem** [Github Profile] (https://github.com/lunagudem)
 
 ---
 
