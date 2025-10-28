@@ -6,42 +6,41 @@
 //
 import SwiftUI
 import Combine
+import UIKit
 
 struct ContentView: View {
-    // Sett datoen for uka som telles ned til
+    
+    //Choose date for countdown
     let targetDate = Calendar.current.date(from: DateComponents(year: 2026, month: 10, day: 10, hour: 0, minute: 0, second: 0))!
     
     @State private var timeRemaining = ""
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        
         ZStack {
-            // Bakgrunnsfarge (fra din Colors.swift-utvidelse)
+    
+            
             Color(hex: "#FF8D00")
                 .ignoresSafeArea()
             
             VStack(spacing: 40) {
-                // Overskrift
                 Text("Tid igjen til UKA!")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .font(.custom("BlennyTrial-Black", size: 40))
                     .foregroundColor(.white)
                 
-                // Nedtelling
                 Text(timeRemaining)
-                    .font(.title)
+                    .font(.custom("BlennyTrial-Black", size: 40))
                     .monospacedDigit()
                     .foregroundColor(.white)
                     .onReceive(timer) { _ in
                         updateCountdown()
                     }
                 
-                // Knapp
                 Button(action: {
-                    // Ingen handling foreløpig
                 }) {
                     Text("Trykk her")
-                        .font(.title3)
+                        .font(.custom("BlennyTrial-Black", size: 30))
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.white)
@@ -57,7 +56,6 @@ struct ContentView: View {
         }
     }
     
-    // Beregner og oppdaterer nedtellingen
     func updateCountdown() {
         let now = Date()
         let diff = targetDate.timeIntervalSince(now)
