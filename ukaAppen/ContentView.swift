@@ -6,8 +6,10 @@
 //
 import SwiftUI
 import Combine
+import UIKit
 
 struct ContentView: View {
+    
     //Choose date for countdown
     let targetDate = Calendar.current.date(from: DateComponents(year: 2026, month: 10, day: 10, hour: 0, minute: 0, second: 0))!
     
@@ -15,18 +17,20 @@ struct ContentView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
+        
         ZStack {
+    
+            
             Color(hex: "#FF8D00")
                 .ignoresSafeArea()
             
             VStack(spacing: 40) {
                 Text("Tid igjen til UKA!")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .font(.custom("BlennyTrial-Black", size: 40))
                     .foregroundColor(.white)
                 
                 Text(timeRemaining)
-                    .font(.title)
+                    .font(.custom("BlennyTrial-Black", size: 40))
                     .monospacedDigit()
                     .foregroundColor(.white)
                     .onReceive(timer) { _ in
@@ -36,7 +40,7 @@ struct ContentView: View {
                 Button(action: {
                 }) {
                     Text("Trykk her")
-                        .font(.title3)
+                        .font(.custom("BlennyTrial-Black", size: 30))
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.white)
